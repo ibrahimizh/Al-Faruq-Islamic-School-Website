@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+.glass-light {
+  @apply bg-white/60 backdrop-blur-2xl border border-white/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+}
+.glass-card-light {
+  @apply bg-white/70 backdrop-blur-xl border border-slate-200/50 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)];
+}
+.text-gradient-light {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-500;
+}
